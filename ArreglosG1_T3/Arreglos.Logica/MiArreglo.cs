@@ -1,64 +1,45 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Arreglos.Logica;
 
-namespace Arreglos.Logica
+Console.WriteLine("Hello, World!");
+
+Console.WriteLine("Arreglo");
+MiArreglo oMiArreglo = new MiArreglo(5);
+
+try
 {
-    internal class MiArreglo
-    {
-        //Atributos o campos
-        private int _tope;
-        private int[] _arreglo;
-         
-        //Constructor
-        public MiArreglo(int n)
-        {
-            N = n;
-            _arreglo = new int[N];
-            _tope = 0;
-        }
-        //Propiedades
-        public int N { get; }
-        public bool EstaLleno => _tope == N;
-        public bool EstaVacio =>_tope == 0;
+    oMiArreglo.Agregar(7);
+    oMiArreglo.Agregar(-2);
+    oMiArreglo.Agregar(8);
 
-        //Metodos
-        public void Llenar(int minimo, int maximo)
-        {
-            Random oRandom = new Random();
-            for(int i = 0; i < N; i++)
-            {
-                _arreglo[i] = oRandom.Next(minimo, maximo);
-            }
-            _tope = N;
-        }
+    Console.WriteLine(oMiArreglo);
+    Console.WriteLine("Insertar 500 en posicion 1");
+    Console.ReadKey();
+    oMiArreglo.Insertar(500, 1);
+    Console.WriteLine(oMiArreglo);
 
-        //Metodo ToString
-        public override string ToString()
-        {
-            if (EstaVacio)
-            {
-                return "Esta vacio";
-            }
+    Console.WriteLine("Eliminar 500 en posicion 1");
+    Console.ReadKey();
+    oMiArreglo.Eliminar(1);
+    Console.WriteLine(oMiArreglo);
 
-            string cadena = string.Empty;
-            int contador = 0;
-            for (int i = 0; i < _tope - 1; i++)
-            {
-                cadena = cadena + _arreglo[i];
-                cadena += $"{_arreglo[i]}\t ";
-                contador++;
-                if (contador > 9)
-                {
-                    cadena += "\n";
-                    contador = 0; 
-                }
-
-            }
-            return cadena;
-
-
-          
-        }
-    }
 }
+catch (Exception ex)
+{
+    Console.WriteLine(ex.Message);
+}
+Console.WriteLine(oMiArreglo);
+
+//oMiArreglo.Llenar(1, 20);
+
+//Console.WriteLine("Arreglo desordenado \n");
+//Console.WriteLine(oMiArreglo);
+
+//Console.WriteLine("Arreglo ordenado ascendente \n");
+//oMiArreglo.Ordenar();
+//Console.WriteLine(oMiArreglo);
+
+//Console.WriteLine("Arreglo ordenado descendente \n");
+//oMiArreglo.Ordenar(false);
+//Console.WriteLine(oMiArreglo);
+
+//Console.ReadKey();

@@ -1,4 +1,4 @@
 <Solution>
-  <Project Path="Arreglos.Logica/Arreglos.Logica.csproj" />
-  <Project Path="Arreglos.UI.Consola/Arreglos.UI.Consola.csproj" />
+  <Project Path="Arreglos.Logica/Arreglos.Logica.csproj" Id="ef712734-9e26-4813-8461-285b3320e7e0" />
+  <Project Path="Arreglos.UI.Consola/Arreglos.UI.Consola.csproj" Id="61ba370c-9533-4e11-8c8c-a94df75f7e05" />
 </Solution>
