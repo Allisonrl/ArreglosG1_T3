@@ -67,7 +67,6 @@ namespace Arreglos.Logica
                 }
             }
         }
-
         //Métod Cambiar
         public void Cambiar(ref int a, ref int b)
         {
