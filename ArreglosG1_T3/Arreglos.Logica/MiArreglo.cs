@@ -1,6 +1,4 @@
 ﻿using Arreglos.Logica;
-
-
 Console.WriteLine("Arreglo");
 MiArreglo oMiArreglo = new MiArreglo(5);
 
