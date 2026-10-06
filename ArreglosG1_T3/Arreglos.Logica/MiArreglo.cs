@@ -34,7 +34,6 @@ Console.WriteLine(oMiArreglo);
 //Console.WriteLine("Arreglo ordenado ascendente \n");
 //oMiArreglo.Ordenar();
 //Console.WriteLine(oMiArreglo);
-
 //Console.WriteLine("Arreglo ordenado descendente \n");
 //oMiArreglo.Ordenar(false);
 //Console.WriteLine(oMiArreglo);
