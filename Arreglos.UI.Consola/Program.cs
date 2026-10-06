@@ -75,7 +75,6 @@ namespace Arreglos.Logica
             a = b;
             b = aux;
         }
-
         //Método agregar
         public void Agregar(int numero)
         {
