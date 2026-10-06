@@ -27,7 +27,6 @@ catch (Exception ex)
 Console.WriteLine(oMiArreglo);
 
 //oMiArreglo.Llenar(1, 20);
-
 //Console.WriteLine("Arreglo desordenado \n");
 //Console.WriteLine(oMiArreglo);
 //Console.WriteLine("Arreglo ordenado ascendente \n");
