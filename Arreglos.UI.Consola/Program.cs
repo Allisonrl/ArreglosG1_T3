@@ -82,7 +82,7 @@ namespace Arreglos.Logica
         {
             if (EstaLleno)
             {
-                throw new Exception("Elarreglo esta lleno");
+               throw new Exception("Elarreglo esta lleno");
             }
             _arreglo[_tope] = numero;
             _tope++;
