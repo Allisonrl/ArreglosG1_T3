@@ -86,7 +86,6 @@ namespace Arreglos.Logica
             _arreglo[_tope] = numero;
             _tope++;
         }
-
         //Método Insertar
         public void Insertar(int numero, int posicion)
         {
