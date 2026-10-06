@@ -77,7 +77,6 @@ namespace Arreglos.Logica
         }
 
         //Método agregar
-
         public void Agregar(int numero)
         {
             if (EstaLleno)
