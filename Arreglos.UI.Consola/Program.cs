@@ -158,6 +158,34 @@ namespace Arreglos.Logica
 
             return arregloPares;
         }
+        //Metodo obtenr primos 
+        public MiArreglo ObtenerPrimos()
+        {
+            int contadorPrimos = 0;
+            for (int i = 0; i < _tope; i++)
+            {
+                if (EsPrimo(_arreglo[i]))
+                {
+                    contadorPrimos++;
+                }
+
+            }
+            return;
+        }
+        //Metodo es primo
+        private bool EsPrimo(int n)
+        {
+            for (int i = 2; i < n ; i++)
+            {
+                if (n % i == 0)
+                {
+                    return true;
+                }
+            }
+            return ;
+        }
+           
+
         //Método ToString
         public override string ToString()
         {
