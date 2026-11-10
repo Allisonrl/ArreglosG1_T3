@@ -45,7 +45,22 @@ try
     Console.WriteLine(verPares);
     Console.ReadKey();
 
+    Console.WriteLine("\Primos\n");
+    var verPares = oMyArreglo.btenerPrimos();
+    var verPrimos = oMyArreglo.ObtenerPrimos();
+    Console.WriteLine(verPrimos);
+    Console.ReadKey();
 
+    Console.WriteLine("\Primos Ordenados\n");
+    var verPrimos.Ordenar();
+    Console.WriteLine(verPrimos);
+    Console.ReadKey();
+
+
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.Message);
 }
 
 //oMiArreglo.Llenar(1, 20);

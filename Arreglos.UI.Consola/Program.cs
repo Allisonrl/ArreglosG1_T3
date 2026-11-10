@@ -170,7 +170,18 @@ namespace Arreglos.Logica
                 }
 
             }
-            return;
+         var arregloPares = new MiArreglo(contadorPrimos);
+            for (int i = 0; i < _tope; i++)
+            {
+                if (_arreglo[i] == 1) { continue; }
+                if (EsPrimo_arreglo[i]))
+                {
+                    arregloPrimos.Agregar(_arreglo[i]);
+                }
+            }
+
+
+            return arregloPrimos;
         }
         //Metodo es primo
         private bool EsPrimo(int n)
