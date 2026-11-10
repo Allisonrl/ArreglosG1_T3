@@ -26,10 +26,32 @@ catch (Exception ex)
 }
 Console.WriteLine(oMiArreglo);
 
+MiArreglo oMyArreglo = new MiArreglo(100);
+try
+{
+
+    Console.WriteLine("\nArreglo\n");
+    oMyArreglo.Llenar():
+    Console.WriteLine(oMyAreglo);
+    Console.ReadKey();
+
+    Console.WriteLine("\Pares\n");
+    var verPares = oMyArreglo.btenerPares();
+    Console.WriteLine(verPares);
+    Console.ReadKey();
+
+    Console.WriteLine("\Pares Ordenados\n");
+    var verPares.Ordenar(true);
+    Console.WriteLine(verPares);
+    Console.ReadKey();
+
+
+}
+
 //oMiArreglo.Llenar(1, 20);
 //Console.WriteLine("Arreglo desordenado \n");
 //Console.WriteLine(oMiArreglo);
-//Console.WriteLine("Arreglo ordenado ascendente \n");
+//Console.WriteLine("Arreglo ordenado ascendente \n");  
 //oMiArreglo.Ordenar();
 //Console.WriteLine(oMiArreglo);
 //Console.WriteLine("Arreglo ordenado descendente \n");
