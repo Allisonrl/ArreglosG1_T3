@@ -56,7 +56,6 @@ try
     Console.WriteLine(verPrimos);
     Console.ReadKey();
 
-
 }
 catch (Exception ex)
 {
