@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Reflection.Metadata.Ecma335;
+using System.Runtime.CompilerServices;
 using System.Text;
 namespace Arreglos.Logica
 {
@@ -135,12 +136,12 @@ namespace Arreglos.Logica
             _tope--;
         }
 
-        public MiArreglo obtenerPares()
+        public MiArreglo ObtenerPares()
         {
             int contadorPares = 0;
-            for (int i = 0; i < tope; i++)
+            for (int i = 0; i < _tope; i++)
             {
-                if (_arreglo[i] % 2 == 0)
+                if (EsPar(_arreglo[i]))
                 {
                     contadorPares++;
                 }
@@ -149,7 +150,7 @@ namespace Arreglos.Logica
             var arregloPares = new MiArreglo(contadorPares);
             for (int i = 0; i < _tope; i++)
             {
-                if (_arreglo[i] % 2 == 0)
+                if (EsPar(_arreglo[i]))
                 {
                     arregloPares.Agregar(_arreglo[i]);
                 }
@@ -158,12 +159,23 @@ namespace Arreglos.Logica
 
             return arregloPares;
         }
-        //Metodo obtenr primos 
+
+        //Metodo es par
+        private bool ESPar(int n)
+        {
+            if(n%2 == 0)
+            {
+                return true;
+            }
+            return false;
+        }
+        //Metodo obtener primos 
         public MiArreglo ObtenerPrimos()
         {
             int contadorPrimos = 0;
             for (int i = 0; i < _tope; i++)
             {
+                if (_arreglo[i] == 1) { continue; }
                 if (EsPrimo(_arreglo[i]))
                 {
                     contadorPrimos++;
@@ -174,7 +186,7 @@ namespace Arreglos.Logica
             for (int i = 0; i < _tope; i++)
             {
                 if (_arreglo[i] == 1) { continue; }
-                if (EsPrimo_arreglo[i]))
+                if (EsPrimo(_arreglo[i]))
                 {
                     arregloPrimos.Agregar(_arreglo[i]);
                 }
@@ -186,14 +198,15 @@ namespace Arreglos.Logica
         //Metodo es primo
         private bool EsPrimo(int n)
         {
-            for (int i = 2; i < n ; i++)
+         
+            for (int i = 2; i < Math.Sqrt  (n) ; i++)
             {
                 if (n % i == 0)
                 {
-                    return true;
+                    return false;
                 }
             }
-            return ;
+            return true;
         }
            
 
